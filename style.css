@@ -560,6 +560,29 @@ a{ color:inherit; text-decoration:none; }
   padding:10px 0;
 }
 
+/* podriadky v zozname (odsadenie ako v dizajne) */
+.price-row.sub{
+  padding-left:18px;
+}
+
+/* skupinové riadky (názov služby/programu) */
+.price-row.group .txt{
+  font-weight:700;
+}
+
+/* veľkosť textu v cenníku (aby sedelo ako v dizajne) */
+.price-row.sub .txt,
+.price-row.sub .val,
+.price-row.group .txt,
+.price-row.group .val,
+.price-row .txt,
+.price-row .val{
+  font-size:12px;
+}
+
+.price-row.head .txt{ font-size:16px; }
+.price-row.head .val{ font-size:12px; }
+
 /* ✅ ceny pri INTERIER/EXTERIER rovnaká veľkosť ako ostatné */
 .price-row.head .txt{ font-weight:900; text-transform:uppercase; font-size:16px; }
 .price-row.head .val{ font-size:12px; }

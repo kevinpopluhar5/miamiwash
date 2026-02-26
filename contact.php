@@ -1,3 +1,10 @@
+<?php
+// MiamiWash contact form handler (PHP).
+// Expects JSON POST from frontend. Returns JSON.
+//
+// IMPORTANT: server must support PHP mail() or you need to configure SMTP on hosting.
+// On many hosts, mail() works out of the box. If not, ask hosting for SMTP and I can switch this to SMTP.
+
 header('Content-Type: application/json; charset=utf-8');
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
