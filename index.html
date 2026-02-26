@@ -1,0 +1,1266 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MiamiWash</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="topbar sticky-top bg-white">
+    <nav class="navbar navbar-expand-lg py-0">
+      <div class="container-xxl site-container">
+        <a class="navbar-brand brand d-flex align-items-center gap-1" href="#/" aria-label="MiamiWash">
+          <span class="miami">Miami</span><span class="wash">Wash</span>
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav menu ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#/" data-route-link>O NAS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#/sluzby" data-route-link>SLUŽBY</a></li>
+            <li class="nav-item"><a class="nav-link" href="#/cennik" data-route-link>CENNÍK</a></li>
+            <li class="nav-item"><a class="nav-link" href="#/prenajom" data-route-link>PRENAJOM AUTA</a></li>
+            <li class="nav-item"><a class="nav-link" href="#/galeria" data-route-link>GALERIA</a></li>
+            <li class="nav-item"><a class="nav-link" href="#/kontakt" data-route-link>KONTAKT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="topbar-line"></div>
+  </header>
+
+  <main id="app">
+    <!-- ======================================================
+         HOME  #/
+    ======================================================= -->
+    <div class="view is-active" data-route="/">
+      <!-- HERO -->
+      <section class="hero" aria-label="Hero">
+        <div class="container-xxl site-container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12 col-lg-7">
+              <div class="hero-content">
+                <h1 class="hero-title mb-3">
+                  DOPRAJ SVOJMU AUTU<br/>STAROSTLIVOSŤ,<br/>KTORÚ SI ZASLÚŽI.
+                </h1>
+                <p class="hero-sub mb-4">
+                  Čistý exteriér, svieži interiér a profesionálny prístup.
+                  Tvoje auto u nás vyzerá ako nové – rýchlo a bez starostí.
+                </p>
+                <div class="d-flex gap-2 flex-wrap">
+                  <a class="btn btn-primary-red" href="#/sluzby" data-route-link>Zobraziť naše služby</a>
+                  <a class="btn btn-ghost" href="#/kontakt" data-route-link>Kontaktovať</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 d-none d-lg-block"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES PREVIEW -->
+      <section class="section-pad">
+        <div class="container-xxl site-container">
+          <div class="section-head">
+            <h2 class="section-title">
+              NAŠE SLUŽBY SÚ NAVRHNUTÉ<br/>PRE VAŠE POHODLIE
+            </h2>
+
+            <div class="section-right">
+              <div class="tagline">Čistota, ktorú cítiš<br/>pri každej jazde.</div>
+              <div class="line"></div>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-12 col-md-6 col-xl-3">
+              <a class="service-card" href="#/sluzby/interierove" data-route-link>
+                <img src="images/interier.jpg" alt="Interiér" />
+                <div class="inner">
+                  <div class="name">INTERIÉR</div>
+                  <div class="desc">Vysávanie, čistenie<br/>plastov, okná.<br/>Sviežosť na počkanie.</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3">
+              <a class="service-card" href="#/sluzby/exterierove" data-route-link>
+                <img src="images/exterier.jpg" alt="Exteriér" />
+                <div class="inner">
+                  <div class="name">EXTERIÉR</div>
+                  <div class="desc">Umývanie karosérie,<br/>diskov a pneumatík.<br/>Lesk bez kompromisov.</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3">
+              <a class="service-card" href="#/sluzby/programy" data-route-link>
+                <img src="images/programy.jpg" alt="Programy" />
+                <div class="inner">
+                  <div class="name">PROGRAMY</div>
+                  <div class="desc">Balíky pre čistotu<br/>zvonka aj zvnútra.<br/>Vyberte si úroveň starostlivosti.</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3">
+              <a class="service-card" href="#/sluzby/doplnkove" data-route-link>
+                <img src="images/doplnkovesluzby.jpg" alt="Doplnkové služby" />
+                <div class="inner">
+                  <div class="name">DOPLNKOVÉ SLUŽBY</div>
+                  <div class="desc">Detailing, voskovanie,<br/>autokozmetika. Aj na<br/>domáce použitie.</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RENTALS PREVIEW -->
+      <section class="section-pad">
+        <div class="container-xxl site-container">
+          <div class="rentals-top">
+            <h2 class="section-title">
+              PRENÁJOM AUT PRE LEPŠIE<br/>ZÁŽITKY A POHODLIE
+            </h2>
+
+            <div class="section-right">
+              <!-- do 2 riadkov -->
+              <div class="tagline">Štýlové, praktické a dostupné –<br/>vyberte si auto podľa vašich potrieb.</div>
+              <div class="line"></div>
+
+              <div class="rentals-controls" aria-label="Ovládanie slidera">
+                <button class="ctrl" id="prevBtn" type="button" aria-label="Predchádzajúce">‹</button>
+                <button class="ctrl" id="nextBtn" type="button" aria-label="Nasledujúce">›</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="rental-viewport">
+            <div class="rental-track" id="rentalTrack">
+              <div class="rental-card">
+                <div class="pic"><img src="images/bmwm5.jpg" alt="BMW M5"></div>
+                <div class="meta">
+                  <div>BMW M5</div>
+                  <div class="price">OD 30,75€/DEŇ</div>
+                </div>
+                <a class="cta" href="#/prenajom/detail" data-route-link>Vidieť detail</a>
+              </div>
+
+              <div class="rental-card">
+                <div class="pic"><img src="images/audia6.jpg" alt="Audi A6"></div>
+                <div class="meta">
+                  <div>AUDI A6</div>
+                  <div class="price">OD 49,20€/HOD</div>
+                </div>
+                <a class="cta" href="#/prenajom/detail" data-route-link>Vidieť detail</a>
+              </div>
+
+              <div class="rental-card">
+                <div class="pic"><img src="images/mercedese.jpg" alt="Mercedes E-Class"></div>
+                <div class="meta">
+                  <div>MERCEDES E-CLASS</div>
+                  <div class="price">OD 30,75€/HOD</div>
+                </div>
+                <a class="cta" href="#/prenajom/detail" data-route-link>Vidieť detail</a>
+              </div>
+
+              <div class="rental-card">
+                <div class="pic"><img src="images/bmwm5.jpg" alt="BMW M5"></div>
+                <div class="meta">
+                  <div>BMW M5</div>
+                  <div class="price">OD 30,75€/DEŇ</div>
+                </div>
+                <a class="cta" href="#/prenajom/detail" data-route-link>Vidieť detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section-pad">
+        <div class="container-xxl site-container">
+          <div class="section-head">
+            <h2 class="section-title">ČASTO KLADENÉ OTÁZKY</h2>
+            <div class="section-right">
+              <!-- do 2 riadkov -->
+              <div class="tagline">Získajte odpovede rýchlo<br/>a bez zbytočného hľadania.</div>
+              <div class="line"></div>
+            </div>
+          </div>
+
+          <div class="faq-wrap" id="faqWrap">
+            <div class="faq-item">
+              <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+                <span>Je potrebné rezervovať si termín vopred?</span>
+                <div class="faq-icon" aria-hidden="true">+</div>
+              </div>
+              <div class="faq-a" aria-hidden="true">
+                <p>
+                  Na bežné umytie nie je potrebná rezervácia, môžete prísť kedykoľvek počas otváracích hodín.
+                  Pri detailingu alebo väčších službách odporúčame rezerváciu, aby sme vám vedeli garantovať presný čas.
+                  Rezervácia zároveň skracuje čakanie.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+                <span>Akú chémiu používate pri čistení?</span>
+                <div class="faq-icon" aria-hidden="true">+</div>
+              </div>
+              <div class="faq-a" aria-hidden="true">
+                <p>
+                  Používame profesionálne prípravky, ktoré sú šetrné k laku, interiéru aj životnému prostrediu.
+                  Každý produkt je overený a určený pre kvalitné ručné umývanie.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+                <span>Ako dlho trvá kompletné umytie auta?</span>
+                <div class="faq-icon" aria-hidden="true">+</div>
+              </div>
+              <div class="faq-a" aria-hidden="true">
+                <p>
+                  Závisí to od zvoleného programu, no väčšinou 30-60 minút.
+                  Pri detailingu alebo tepovaní môže byť čas dlhší.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+                <span>Robíte aj tepovanie interiéru?</span>
+                <div class="faq-icon" aria-hidden="true">+</div>
+              </div>
+              <div class="faq-a" aria-hidden="true">
+                <p>
+                  Áno, ponúkame kompletné tepovanie sedadiel, kobercov aj kufra.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+                <span>Prenajímate autá aj na víkend alebo dlhodobo?</span>
+                <div class="faq-icon" aria-hidden="true">+</div>
+              </div>
+              <div class="faq-a" aria-hidden="true">
+                <p>Áno, ponúkame krátkodobý aj dlhodobý prenájom podľa dohody.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT PREVIEW -->
+      <section class="contact section-pad">
+        <div class="container-xxl site-container">
+          <div class="section-head contact-head">
+            <h2 class="section-title">MIAMI WASH- KONTAKTUJTE NÁS</h2>
+            <div class="section-right">
+              <div class="tagline">Vaše auto si zaslúži viac</div>
+              <div class="line"></div>
+            </div>
+          </div>
+
+          <div class="row g-3 align-items-stretch">
+            <div class="col-12 col-lg-8">
+              <div class="map map-embed" aria-label="Mapa">
+                <iframe
+                  title="MiamiWash – mapa"
+                  loading="lazy"
+                  allowfullscreen
+                  referrerpolicy="no-referrer-when-downgrade"
+                  style="position:absolute; inset:0; width:100%; height:100%; border:0; display:block;"
+                  src="https://www.google.com/maps?q=Sv%C3%A1bsk%C3%A1%2088%2C%20Pre%C5%A1ov&output=embed"></iframe>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <aside class="contact-panel-light">
+                <div class="contact-item"><div class="label">Adresa:</div><div class="value">Švábska 88, Prešov</div></div>
+                <div class="contact-item"><div class="label">Otvorené:</div><div class="value">9-18</div></div>
+                <div class="contact-item"><div class="label">Mobil:</div><div class="value">+421 907 738 488</div></div>
+                <div class="contact-item"><div class="label">Email:</div><div class="value">info@miamiwash.sk</div></div>
+                <div class="contact-item">
+                  <div class="label">Socialne siete:</div>
+                  <div class="value social">
+                    <a class="soc" href="https://www.instagram.com/miamiwash.sk?igsh=MWFod2dmcWpiaHVocA==" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a class="soc" href="https://www.facebook.com/share/1AhNEcQjn1/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ======================================================
+         SLUŽBY (GRID)  #/sluzby
+    ======================================================= -->
+    <div class="view" data-route="/sluzby">
+      <section class="section-pad services-page">
+        <div class="container-xxl site-container">
+          <div class="services-head">
+            <h1 class="services-title">
+              VYBERTE SI SLUŽBU, KTORÁ<br>
+              VÁM NAJVIAC VYHOVUJE
+            </h1>
+            <div class="services-sub">
+              Profesionálna starostlivosť o vaše auto<br>
+              – ktorá udrží vaše vozidlo ako nové
+            </div>
+          </div>
+
+          <div class="services-line"></div>
+
+          <div class="row g-4 services-grid">
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="service-box">
+                <div>
+                  <h3>EXTERIER</h3>
+                  <div class="price">Od 19,99€</div>
+                  <ul>
+                    <li>Ručné umytie karosérie</li>
+                    <li>Čistenie diskov</li>
+                    <li>Ošetrenie pneumatík</li>
+                    <li>Odstránenie hmyzu</li>
+                    <li>Aplikácia vosku, sušenie a leštenie okien</li>
+                  </ul>
+                </div>
+                <a href="#/sluzby/exterierove" class="btn-red" data-route-link>Vidieť viac</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="service-box">
+                <div>
+                  <h3>INTERIER</h3>
+                  <div class="price">Od 19,99€</div>
+                  <ul>
+                    <li>Vysávanie podlahy, kobercov, sedadiel a priestorov</li>
+                    <li>Vyčistenie rohoží</li>
+                    <li>Ošetrenie plastových častí a palubovky</li>
+                    <li>Vyčistenie vnútorných okien a zrkadiel</li>
+                  </ul>
+                </div>
+                <a href="#/sluzby/interierove" class="btn-red" data-route-link>Vidieť viac</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="service-box">
+                <div>
+                  <h3>DOPLNKOVÉ<br>SLUŽBY</h3>
+                  <div class="price">Od 25,99€</div>
+                  <ul>
+                    <li>Detailing</li>
+                    <li>Voskovanie</li>
+                    <li>Leštenie</li>
+                    <li>Tepovanie</li>
+                    <li>Ošetrenie plastov</li>
+                    <li>Predaj autokozmetiky</li>
+                  </ul>
+                </div>
+                <a href="#/sluzby/doplnkove" class="btn-red" data-route-link>Vidieť viac</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3">
+              <div class="service-box">
+                <div>
+                  <h3>PROGRAMY</h3>
+                  <div class="price">Od 80,99€</div>
+                  <ul>
+                    <li>Interiér + Exteriér + Detailing</li>
+                    <li>Interiér + Exteriér + Tepovanie</li>
+                    <li>Kompletné balíky na mieru</li>
+                  </ul>
+                </div>
+                <a href="#/sluzby/programy" class="btn-red" data-route-link>Vidieť viac</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- ======================================================
+         DETAIL SLUŽIEB - EXTERIÉROVÉ
+    ======================================================= -->
+    <div class="view" data-route="/sluzby/exterierove">
+      <section class="detail section-pad">
+        <div class="container-xxl site-container">
+          <a class="backlink" href="#/sluzby" data-route-link>&lt; Späť</a>
+
+          <div class="detail-top">
+            <h1 class="detail-title">EXTERIEROVÉ SLUŽBY</h1>
+            <div class="detail-price">od 19,99€</div>
+          </div>
+
+          <div class="detail-rule"></div>
+
+          <div class="row g-4 detail-row">
+            <div class="col-12 col-lg-4 col-xl-3">
+              <p class="detail-lead">
+                Naše služby zahŕňajú kompletnú starostlivosť o vonkajší vzhľad auta – od čistenia až po ochranu laku.
+                Každý detail je dôležitý, aby vaše vozidlo vyzeralo ako nové.
+              </p>
+              <a class="btn btn-primary-red w-100 btn-kontakt" href="#/kontakt" data-route-link>Kontaktovať</a>
+            </div>
+
+            <div class="col-12 col-lg-8 col-xl-9">
+              <div class="steps-grid">
+                <div class="step">
+                  <div class="circle">1</div>
+                  <div class="step-body">
+                    <div class="step-title">RUČNÉ UMYTIE KAROSÉRIE</div>
+                    <div class="step-text">Jemné a dôkladné čistenie laku bez poškodenia.</div>
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="circle">2</div>
+                  <div class="step-body">
+                    <div class="step-title">OŠETRENIE PNEUMATÍK</div>
+                    <div class="step-text">Obnova farby a ochrana gumy.</div>
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="circle">3</div>
+                  <div class="step-body">
+                    <div class="step-title">ČISTENIE DISKOV</div>
+                    <div class="step-text">Odstránenie prachu a nečistôt z kolies.</div>
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="circle">4</div>
+                  <div class="step-body">
+                    <div class="step-title">APLIKÁCIA VOSKU</div>
+                    <div class="step-text">Ochrana laku a dlhodobý lesk.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-media">
+            <div class="big"><img src="images/detailsluzby1.jpg" alt="Detail foto"></div>
+            <div class="thumbs square-thumbs">
+              <div class="t"><img src="images/detailsluzby2.jpg" alt="Foto 1"></div>
+              <div class="t"><img src="images/detailsluzby3.jpg" alt="Foto 2"></div>
+              <div class="t"><img src="images/detailsluzby4.jpg" alt="Foto 3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- DETAIL SLUŽIEB - INTERIÉROVÉ -->
+    <div class="view" data-route="/sluzby/interierove">
+      <section class="detail section-pad">
+        <div class="container-xxl site-container">
+          <a class="backlink" href="#/sluzby" data-route-link>&lt; Späť</a>
+
+          <div class="detail-top">
+            <h1 class="detail-title">INTERIÉROVÉ SLUŽBY</h1>
+            <div class="detail-price">od 19,99€</div>
+          </div>
+
+          <div class="detail-rule"></div>
+
+          <div class="row g-4 detail-row">
+            <div class="col-12 col-lg-4 col-xl-3">
+              <p class="detail-lead">
+                Zameriavame sa na kompletnú starostlivosť o vnútorný priestor vozidla – od dôkladného vysávania až po precízne ošetrenie.
+              </p>
+              <a class="btn btn-primary-red w-100 btn-kontakt" href="#/kontakt" data-route-link>Kontaktovať</a>
+            </div>
+
+            <div class="col-12 col-lg-8 col-xl-9">
+              <div class="steps-grid">
+                <div class="step">
+                  <div class="circle">1</div>
+                  <div class="step-body">
+                    <div class="step-title">VYSÁVANIE INTERIÉRU</div>
+                    <div class="step-text">Dôkladné vysávanie všetkých priestorov.</div>
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="circle">2</div>
+                  <div class="step-body">
+                    <div class="step-title">OŠETRENIE PLASTOVÝCH ČASTÍ A PALUBOVKY</div>
+                    <div class="step-text">Čistenie a ochrana povrchov.</div>
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="circle">3</div>
+                  <div class="step-body">
+                    <div class="step-title">VYČISTENIE VNÚTORNÝCH OKIEN A ZRKADIEL</div>
+                    <div class="step-text">Bez šmúh pre dokonalú viditeľnosť.</div>
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="circle">4</div>
+                  <div class="step-body">
+                    <div class="step-title">VYČISTENIE ROHOŽÍ</div>
+                    <div class="step-text">Umytie rohoží zachytávajúcich najviac nečistôt.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-media">
+            <div class="big"><img src="images/detailsluzby1.jpg" alt="Detail foto"></div>
+            <div class="thumbs square-thumbs">
+              <div class="t"><img src="images/detailsluzby2.jpg" alt="Foto 1"></div>
+              <div class="t"><img src="images/detailsluzby3.jpg" alt="Foto 2"></div>
+              <div class="t"><img src="images/detailsluzby4.jpg" alt="Foto 3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- DETAIL SLUŽIEB - DOPLNKOVÉ -->
+    <div class="view" data-route="/sluzby/doplnkove">
+      <section class="detail detail--doplnkove section-pad">
+        <div class="container-xxl site-container">
+          <a class="backlink" href="#/sluzby" data-route-link>&lt; Späť</a>
+
+          <div class="detail-top">
+            <h1 class="detail-title">DOPLNKOVÉ SLUŽBY</h1>
+            <div class="detail-price">od 25,99€</div>
+          </div>
+
+          <div class="detail-rule"></div>
+
+          <p class="detail-desc">
+            Doplnkové služby sú určené pre zákazníkov, ktorí chcú svojmu vozidlu dopriať ešte viac – či už ide o hĺbkové čistenie,
+            obnovu lesku alebo profesionálnu ochranu povrchov. Používame kvalitné prípravky a precízne postupy, ktoré zabezpečia
+            viditeľný a trvácny výsledok.
+          </p>
+
+          <a class="btn btn-primary-red w-100 detail-cta" href="#/cennik" data-route-link>Vidieť cennik</a>
+
+          <div class="g-controls svc-controls" aria-label="Ovládanie zoznamu služieb">
+            <button class="g-btn" type="button" data-g-prev="doplnkoveViewport" aria-label="Predchádzajúce"><i class="bi bi-chevron-left"></i></button>
+            <button class="g-btn" type="button" data-g-next="doplnkoveViewport" aria-label="Nasledujúce"><i class="bi bi-chevron-right"></i></button>
+          </div>
+
+          <div class="svc-viewport" id="doplnkoveViewport">
+            <div class="g-track svc-track">
+              <article class="svc-card">
+                <div class="svc-img"><img src="images/lestenie.png" alt="Leštenie"></div>
+                <div class="svc-body">
+                  <div class="svc-title">LEŠTENIE</div>
+                  <div class="svc-text">Obnova lesku karosérie, odstránenie jemných škrabancov a zlepšenie celkového vzhľadu laku.</div>
+                  <div class="svc-time">Čas služby: 1 - 1.5 hod</div>
+                </div>
+              </article>
+
+              <article class="svc-card">
+                <div class="svc-img"><img src="images/tepovanie.png" alt="Tepovanie"></div>
+                <div class="svc-body">
+                  <div class="svc-title">TEPOVANIE</div>
+                  <div class="svc-text">Hĺbkové čistenie textilných sedadiel, kobercov a čalúnenia pre odstránenie škvŕn, zápachov a usadených nečistôt.</div>
+                  <div class="svc-time">Čas služby: 15 - 20 min</div>
+                </div>
+              </article>
+
+              <article class="svc-card">
+                <div class="svc-img"><img src="images/voskovanie.png" alt="Voskovanie"></div>
+                <div class="svc-body">
+                  <div class="svc-title">VOSKOVANIE</div>
+                  <div class="svc-text">Aplikácia kvalitného vosku pre dlhodobú ochranu laku, zvýšený lesk a jednoduchšie udržiavanie čistoty.</div>
+                  <div class="svc-time">Čas služby: 20 - 40 min</div>
+                </div>
+              </article>
+
+              <article class="svc-card">
+                <div class="svc-img"><img src="images/cistenie mot..png" alt="Čistenie motorového priestoru"></div>
+                <div class="svc-body">
+                  <div class="svc-title">ČISTENIE MOTOROVÉHO PRIESTORU</div>
+                  <div class="svc-text">Odstránenie nečistôt a olejových usadenín z oblasti motora.</div>
+                  <div class="svc-time">Čas služby: 10 - 15 min</div>
+                </div>
+              </article>
+
+              <article class="svc-card">
+                <div class="svc-img"><img src="images/interier.jpg" alt="Ošetrenie plastov"></div>
+                <div class="svc-body">
+                  <div class="svc-title">OŠETRENIE PLASTOV</div>
+                  <div class="svc-text">Regenerácia a ochrana interiérových plastov pre svieži vzhľad a dlhšiu životnosť.</div>
+                  <div class="svc-time">Čas služby: 10 - 20 min</div>
+                </div>
+              </article>
+
+              <article class="svc-card">
+                <div class="svc-img"><img src="images/exterier.jpg" alt="Predaj autokozmetiky"></div>
+                <div class="svc-body">
+                  <div class="svc-title">PREDAJ AUTOKOZMETIKY</div>
+                  <div class="svc-text">Kvalitné prípravky na domáce použitie – pre správnu starostlivosť o interiér aj exteriér.</div>
+                  <div class="svc-time">Čas služby: podľa výberu</div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- DETAIL SLUŽIEB - PROGRAMY -->
+    <div class="view" data-route="/sluzby/programy">
+      <section class="detail detail--programy section-pad">
+        <div class="container-xxl site-container">
+          <a class="backlink" href="#/sluzby" data-route-link>&lt; Späť</a>
+
+          <div class="detail-top">
+            <h1 class="detail-title">PROGRAMY</h1>
+            <div class="detail-price">od 80,99€</div>
+          </div>
+
+          <div class="detail-rule"></div>
+
+          <p class="detail-desc">
+            Doprajte svojmu vozidlu nadštandardnú starostlivosť v rámci našich zvýhodnených programov. Každý program kombinuje kompletné
+            čistenie interiéru aj exteriéru s doplnkovými službami, ktoré zabezpečia výrazne lepší výsledok a dlhodobý efekt. Vyberte si program,
+            ktorý chcete svojmu autu dopriať.
+          </p>
+
+          <a class="btn btn-primary-red w-100 detail-cta" href="#/cennik" data-route-link>Vidieť cennik</a>
+
+          <div class="g-controls svc-controls" aria-label="Ovládanie programov">
+            <button class="g-btn" type="button" data-g-prev="programyViewport" aria-label="Predchádzajúce"><i class="bi bi-chevron-left"></i></button>
+            <button class="g-btn" type="button" data-g-next="programyViewport" aria-label="Nasledujúce"><i class="bi bi-chevron-right"></i></button>
+          </div>
+
+          <div class="svc-viewport" id="programyViewport">
+            <div class="g-track svc-track">
+              <article class="svc-card">
+                <div class="svc-img"><img src="images/lestenie.png" alt="Basic Clean"></div>
+                <div class="svc-body">
+                  <div class="svc-title">BASIC CLEAN</div>
+                  <div class="svc-text"><b>Interiér + Exteriér</b><br>Základný balík pre kompletné bežné čistenie vozidla zvnútra aj zvonka. Ideálny pre pravidelnú údržbu.</div>
+                  <div class="svc-time">Čas služby: 1 - 1.5 hod</div>
+                </div>
+              </article>
+
+              <article class="svc-card">
+                <div class="svc-img"><img src="images/tepovanie.png" alt="Deep Interior"></div>
+                <div class="svc-body">
+                  <div class="svc-title">DEEP INTERIOR</div>
+                  <div class="svc-text"><b>Interiér + Exteriér + Tepovanie</b><br>Kompletné čistenie doplnené o hĺbkové tepovanie sedadiel, kobercov a čalúnenia. Vhodné pre rodiny, majiteľov psov alebo silne znečistené interiéry.</div>
+                  <div class="svc-time">Čas služby: 15 - 20 min</div>
+                </div>
+              </article>
+
+              <article class="svc-card">
+                <div class="svc-img"><img src="images/voskovanie.png" alt="Shine &amp; Protect"></div>
+                <div class="svc-body">
+                  <div class="svc-title">SHINE &amp; PROTECT</div>
+                  <div class="svc-text"><b>Interiér + Exteriér +<br> Voskovanie</b><br>Kompletné čistenie s aplikáciou kvalitného vosku pre dlhodobý lesk a ochranu laku. Perfektné po zime alebo pred letom.</div>
+                  <div class="svc-time">Čas služby: 20 - 40 min</div>
+                </div>
+              </article>
+
+              <article class="svc-card">
+                <div class="svc-img"><img src="images/cistenie mot..png" alt="Gloss Package"></div>
+                <div class="svc-body">
+                  <div class="svc-title">GLOSS PACKAGE</div>
+                  <div class="svc-text"><b>Interiér + Exteriér + Leštenie</b><br>Kompletné čistenie doplnené o profesionálne leštenie karosérie. Odporúčané pri príprave auta na predaj alebo fotenie.</div>
+                  <div class="svc-time">Čas služby: 10 - 15 min</div>
+                </div>
+              </article>
+
+              <article class="svc-card">
+                <div class="svc-img"><img src="images/interier.jpg" alt="Premium Detail"></div>
+                <div class="svc-body">
+                  <div class="svc-title">PREMIUM DETAIL</div>
+                  <div class="svc-text"><b>Interiér + Exteriér + Detailing</b><br>Detailná starostlivosť o všetky povrchy s dôrazom na precíznosť. Vhodné pre zákazníkov, ktorí chcú auto v stave „ako nové".</div>
+                  <div class="svc-time">Čas služby: podľa výberu</div>
+                </div>
+              </article>
+
+              <article class="svc-card">
+                <div class="svc-img"><img src="images/exterier.jpg" alt="Ultra Complete"></div>
+                <div class="svc-body">
+                  <div class="svc-title">ULTRA COMPLETE</div>
+                  <div class="svc-text"><b>Interiér + Exteriér + Tepovanie + Detailing + Ošetrenie plastov</b><br>Najkomplexnejší balík s hĺbkovým čistením, detailnou starostlivosťou a obnovou plastov. Prémiová voľba pre náročných zákazníkov, ktorí chcú maximálny výsledok.</div>
+                  <div class="svc-time">Čas služby: podľa výberu</div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ======================================================
+         CENNÍK  #/cennik
+    ======================================================= -->
+    <div class="view" data-route="/cennik">
+      <section class="section-pad price-page">
+        <div class="container-xxl site-container">
+          <div class="price-top">
+            <h1 class="price-title">CENNÍK 2026 – MIAMIWASH</h1>
+          </div>
+          <div class="price-rule"></div>
+
+          <div class="price-list">
+            <div class="price-row head">
+              <div class="txt">INTERIER</div>
+              <div class="val red">od 16,99€</div>
+            </div>
+            <div class="price-divider"></div>
+
+            <div class="price-row head">
+              <div class="txt">EXTERIER</div>
+              <div class="val red">od 17,99€</div>
+            </div>
+            <div class="price-divider"></div>
+
+            <div class="price-subhead">DOPLNKOVÉ SLUŽBY</div>
+
+            <div class="price-row">
+              <div class="txt small">Tepovanie Sedačky + koberce + kufor</div>
+              <div class="val red small">od 49,99€</div>
+            </div><div class="price-divider light"></div>
+
+            <div class="price-row">
+              <div class="txt small">Detailing interiéru - Detailné čistenie všetkých povrchov</div>
+              <div class="val red small">od 49,99€</div>
+            </div><div class="price-divider light"></div>
+
+            <div class="price-row">
+              <div class="txt small">Detailing exteriéru - Hĺbkové čistenie detailov karosérie, špár, emblémov</div>
+              <div class="val red small">od 49,99€</div>
+            </div><div class="price-divider light"></div>
+
+            <div class="price-row">
+              <div class="txt small">Ošetrenie plastov (interiér alebo exteriér)</div>
+              <div class="val red small">od 6,99€</div>
+            </div><div class="price-divider light"></div>
+
+            <div class="price-row">
+              <div class="txt small">Leštenie karosérie</div>
+              <div class="val red small">od 39,99€</div>
+            </div><div class="price-divider light"></div>
+
+            <div class="price-row">
+              <div class="txt small">Aplikácia tvrdého vosku (prémiový vosk)</div>
+              <div class="val red small">od 14,99€</div>
+            </div><div class="price-divider"></div>
+
+            <div class="price-subhead">PROGRAMY</div>
+
+            <div class="price-row">
+              <div class="txt small">BASIC CLEAN (Interier + Exterier)</div>
+              <div class="val red small">od 29,99€</div>
+            </div><div class="price-divider light"></div>
+
+            <div class="price-row">
+              <div class="txt small">DEEP INTERIOR (Interier + Exterier + Tepovanie)</div>
+              <div class="val red small">od 79,99€</div>
+            </div><div class="price-divider light"></div>
+
+            <div class="price-row">
+              <div class="txt small">SHINE &amp; PROTECT (Interier + Exterier + Voskovanie)</div>
+              <div class="val red small">od 39,99€</div>
+            </div><div class="price-divider light"></div>
+
+            <div class="price-row">
+              <div class="txt small">PREMIUM DETAIL (Interier + Exterier + Detailing)</div>
+              <div class="val red small">od 59,99€</div>
+            </div><div class="price-divider light"></div>
+
+            <div class="price-row">
+              <div class="txt small">GLOSS PACKAGE (Interier + Exterier + Lestenie)</div>
+              <div class="val red small">od 69,99€</div>
+            </div><div class="price-divider light"></div>
+
+            <div class="price-row">
+              <div class="txt small">ULTRA COMPLETE (Interier + Exterier + Tepovanie + Detailing + Plasty)</div>
+              <div class="val red small">od 99,99€</div>
+            </div><div class="price-divider light"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ======================================================
+         PRENÁJOM AUTA  #/prenajom
+    ======================================================= -->
+    <div class="view" data-route="/prenajom">
+      <section class="section-pad rent-page">
+        <div class="container-xxl site-container">
+          <h2 class="rent-page-title">PONUKA AUT NA PRENAJOM</h2>
+          <div class="rent-page-rule"></div>
+
+          <div class="rent-stack">
+            <!-- auto 1 -->
+            <article class="rent-row" data-gallery="rent-1">
+              <div class="rent-left">
+                <div class="rent-main-img"><img src="images/opelmain.jpg" alt="Opel Combo Life MT"></div>
+                <div class="rent-thumbs">
+                  <div class="rt"><img src="images/opel1.jpg" alt="thumb 1"></div>
+                  <div class="rt"><img src="images/opel2.jpg" alt="thumb 2"></div>
+                  <div class="rt"><img src="images/opel3.jpg" alt="thumb 3"></div>
+                </div>
+              </div>
+
+              <div class="rent-right">
+                <div class="rent-head">
+                  <div class="rent-name">OPEL COMBO LIFE MT</div>
+                  <div class="rent-price">Od 30,75€</div>
+                </div>
+
+                <div class="rent-body">
+                  <p>
+                    Auto s manuálnou prevodovkou je priestranné a všestranné rodinné auto,
+                    ponúka flexibilný interiér, veľký batožinový priestor a pohodlné cestovanie pre päť až sedem osôb.
+                  </p>
+
+                  <ul class="rent-feats">
+                    <li>Komfort a interiér</li>
+                    <li>Čistenie diskov</li>
+                    <li>Bezpečnosť a asistenti</li>
+                    <li>Exteriér</li>
+                    <li>Pohon</li>
+                  </ul>
+                </div>
+
+                <a class="rent-cta" href="#/prenajom/detail" data-route-link>Detail auta</a>
+              </div>
+            </article>
+
+            <!-- auto 2 -->
+            <article class="rent-row" data-gallery="rent-2">
+              <div class="rent-left">
+                <div class="rent-main-img"><img src="images/opelmain.jpg" alt="Opel Combo Life MT"></div>
+                <div class="rent-thumbs">
+                  <div class="rt"><img src="images/opel1.jpg" alt="thumb 1"></div>
+                  <div class="rt"><img src="images/opel2.jpg" alt="thumb 2"></div>
+                  <div class="rt"><img src="images/opel3.jpg" alt="thumb 3"></div>
+                </div>
+              </div>
+
+              <div class="rent-right">
+                <div class="rent-head">
+                  <div class="rent-name">OPEL COMBO LIFE MT</div>
+                  <div class="rent-price">Od 30,75€</div>
+                </div>
+
+                <div class="rent-body">
+                  <p>
+                    Auto s manuálnou prevodovkou je priestranné a všestranné rodinné auto,
+                    ponúka flexibilný interiér, veľký batožinový priestor a pohodlné cestovanie pre päť až sedem osôb.
+                  </p>
+
+                  <ul class="rent-feats">
+                    <li>Komfort a interiér</li>
+                    <li>Čistenie diskov</li>
+                    <li>Bezpečnosť a asistenti</li>
+                    <li>Exteriér</li>
+                    <li>Pohon</li>
+                  </ul>
+                </div>
+
+                <a class="rent-cta" href="#/prenajom/detail" data-route-link>Detail auta</a>
+              </div>
+            </article>
+
+            <!-- auto 3 -->
+            <article class="rent-row" data-gallery="rent-3">
+              <div class="rent-left">
+                <div class="rent-main-img"><img src="images/opelmain.jpg" alt="Opel Combo Life MT"></div>
+                <div class="rent-thumbs">
+                  <div class="rt"><img src="images/opel1.jpg" alt="thumb 1"></div>
+                  <div class="rt"><img src="images/opel2.jpg" alt="thumb 2"></div>
+                  <div class="rt"><img src="images/opel3.jpg" alt="thumb 3"></div>
+                </div>
+              </div>
+
+              <div class="rent-right">
+                <div class="rent-head">
+                  <div class="rent-name">OPEL COMBO LIFE MT</div>
+                  <div class="rent-price">Od 30,75€</div>
+                </div>
+
+                <div class="rent-body">
+                  <p>
+                    Auto s manuálnou prevodovkou je priestranné a všestranné rodinné auto,
+                    ponúka flexibilný interiér, veľký batožinový priestor a pohodlné cestovanie pre päť až sedem osôb.
+                  </p>
+
+                  <ul class="rent-feats">
+                    <li>Komfort a interiér</li>
+                    <li>Čistenie diskov</li>
+                    <li>Bezpečnosť a asistenti</li>
+                    <li>Exteriér</li>
+                    <li>Pohon</li>
+                  </ul>
+                </div>
+
+                <a class="rent-cta" href="#/prenajom/detail" data-route-link>Detail auta</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ======================================================
+         DETAIL AUTA  #/prenajom/detail
+    ======================================================= -->
+    <div class="view" data-route="/prenajom/detail">
+      <section class="section-pad car-detail" data-gallery="car-detail">
+        <div class="container-xxl site-container">
+          <a class="backlink" href="#/prenajom" data-route-link>&lt; Späť</a>
+
+          <div class="car-top">
+            <div class="car-left">
+              <div class="car-main">
+                <img src="images/opelmain.jpg" alt="Opel Combo Life MT">
+              </div>
+              <div class="car-thumbs">
+                <div class="ct"><img src="images/opel1.jpg" alt="thumb 1"></div>
+                <div class="ct"><img src="images/opel2.jpg" alt="thumb 2"></div>
+                <div class="ct"><img src="images/opel3.jpg" alt="thumb 3"></div>
+              </div>
+            </div>
+
+            <div class="car-right">
+              <div class="car-headblock">
+                <div class="car-title-row">
+                  <h1 class="car-title">OPEL COMBO LIFE MT</h1>
+                  <div class="car-price">Od 30,75€</div>
+                </div>
+                <div class="car-rule"></div>
+
+                <p class="car-desc">
+                  Opel Combo Life A05 s manuálnou prevodovkou je priestranné a všestranné rodinné auto,
+                  ktoré kombinuje komfort osobného vozidla s praktickosťou úžitkového vanu.
+                </p>
+              </div>
+
+              <div class="car-specblock">
+                <h3 class="car-subhead">ŠPECIFIKÁCIE</h3>
+                <div class="car-rule car-rule-thin"></div>
+
+                <div class="spec-grid">
+                <div class="spec">
+                  <div class="spec-title">KOMFORT A INTERIÉR</div>
+                  <ul>
+                    <li>Výškovo nastaviteľné predné sedadlá</li>
+                    <li>Automatická klimatizácia</li>
+                    <li>Apple CarPlay / Android Auto</li>
+                    <li>Bluetooth hands-free</li>
+                  </ul>
+                </div>
+
+                <div class="spec">
+                  <div class="spec-title">BEZPEČNOSŤ A ASISTENTI</div>
+                  <ul>
+                    <li>Front Assist (asistent núdzového brzdenia)</li>
+                    <li>Tempomat</li>
+                  </ul>
+                </div>
+
+                <div class="spec">
+                  <div class="spec-title">EXTERIÉR</div>
+                  <ul>
+                    <li>Metalická farba karosérie</li>
+                    <li>16” disky</li>
+                  </ul>
+                </div>
+
+                <div class="spec">
+                  <div class="spec-title">POHON</div>
+                  <ul>
+                    <li>Predný pohon</li>
+                    <li>Manuálna prevodovka</li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="najazd-title">NAJAZD</h3>
+          <div class="najazd-rule"></div>
+
+          <div class="najazd-wrap">
+            <div class="najazd-left">
+              <ul class="najazd-list">
+                <li><b>Denné limity:</b> podľa cenníka</li>
+                <li><b>Neobmedzené km:</b> +20% k základnej cene - suma sa dopočíta pri potvrdení rezervácie, alebo pri prevzatí vozidla</li>
+                <li><b>Nadlimitné km:</b> 0,16€/km (viac km je možné dohodnúť individuálne)</li>
+              </ul>
+            </div>
+
+            <div class="najazd-right">
+              <div class="najazd-cards">
+                <div class="nz-card">
+                  <div class="t">1-2 dni</div>
+                  <div class="km">250 km/deň</div>
+                </div>
+
+                <div class="nz-card">
+                  <div class="t">14-29 dní</div>
+                  <div class="km">150 km/deň</div>
+                </div>
+
+                <div class="nz-card">
+                  <div class="t">3-6 dni</div>
+                  <div class="km">200 km/deň</div>
+                </div>
+
+                <div class="nz-card nz-span2">
+                  <div class="t">30+ dni</div>
+                  <div class="km">až 6000 km/mesiac,<br>podľa dohody</div>
+                </div>
+
+                <div class="nz-card">
+                  <div class="t">7-13 dni</div>
+                  <div class="km">175 km/deň</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ======================================================
+         GALÉRIA  #/galeria
+    ======================================================= -->
+    <div class="view" data-route="/galeria">
+      <section class="section-pad gallery-page">
+        <div class="container-xxl site-container">
+          <div class="section-head">
+            <h2 class="section-title">UKÁŽKY NAŠICH SLUŽIEB</h2>
+            <div class="section-right">
+              <div class="tagline">Profesionálna starostlivosť o vozidlo, ktorá mu<br>dodá vzhľad ako po výjazde z autosalónu</div>
+              <div class="line"></div>
+            </div>
+          </div>
+
+          <div class="g-block" data-gallery="g1">
+            <div class="g-head">
+              <div class="g-title">EXTERIÉR</div>
+              <div class="g-controls">
+                <button class="g-btn" type="button" data-g-prev="g1"><i class="bi bi-chevron-left"></i></button>
+                <button class="g-btn" type="button" data-g-next="g1"><i class="bi bi-chevron-right"></i></button>
+              </div>
+            </div>
+            <div class="g-rule"></div>
+
+            <div class="g-viewport" id="g1">
+             <div class="g-track">
+                <div class="g-item"><img src="images/exterier.jpg" alt="Exteriér 1"></div>
+                <div class="g-item"><img src="images/detailsluzby1.jpg" alt="Exteriér 2"></div>
+                <div class="g-item"><img src="images/detailsluzby2.jpg" alt="Exteriér 3"></div>
+                <div class="g-item"><img src="images/detailsluzby3.jpg" alt="Exteriér 4"></div>
+                <div class="g-item"><img src="images/detailsluzby4.jpg" alt="Exteriér 5"></div>
+                <div class="g-item"><img src="images/exterier.jpg" alt="Exteriér 6"></div>
+                <div class="g-item"><img src="images/detailsluzby2.jpg" alt="Exteriér 7"></div>
+                <div class="g-item"><img src="images/detailsluzby3.jpg" alt="Exteriér 8"></div>
+             </div>
+            </div>
+
+          </div>
+
+          <div class="g-block" data-gallery="g2">
+            <div class="g-head">
+              <div class="g-title">INTERIÉR</div>
+              <div class="g-controls">
+                <button class="g-btn" type="button" data-g-prev="g2"><i class="bi bi-chevron-left"></i></button>
+                <button class="g-btn" type="button" data-g-next="g2"><i class="bi bi-chevron-right"></i></button>
+              </div>
+            </div>
+            <div class="g-rule"></div>
+
+            <div class="g-viewport" id="g2">
+              <div class="g-track">
+                <div class="g-item"><img src="images/interier.jpg" alt="Interiér 1"></div>
+                <div class="g-item"><img src="images/detailsluzby1.jpg" alt="Interiér 2"></div>
+                <div class="g-item"><img src="images/detailsluzby2.jpg" alt="Interiér 3"></div>
+                <div class="g-item"><img src="images/detailsluzby3.jpg" alt="Interiér 4"></div>
+                <div class="g-item"><img src="images/detailsluzby4.jpg" alt="Interiér 5"></div>
+                <div class="g-item"><img src="images/interier.jpg" alt="Interiér 6"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="g-block" data-gallery="g3">
+            <div class="g-head">
+              <div class="g-title">NAŠE AUTÁ</div>
+              <div class="g-controls">
+                <button class="g-btn" type="button" data-g-prev="g3"><i class="bi bi-chevron-left"></i></button>
+                <button class="g-btn" type="button" data-g-next="g3"><i class="bi bi-chevron-right"></i></button>
+              </div>
+            </div>
+            <div class="g-rule"></div>
+
+            <div class="g-viewport" id="g3">
+              <div class="g-track">
+                <div class="g-item"><img src="images/opelmain.jpg" alt="Auto 1"></div>
+                <div class="g-item"><img src="images/opel1.jpg" alt="Auto 2"></div>
+                <div class="g-item"><img src="images/opel2.jpg" alt="Auto 3"></div>
+                <div class="g-item"><img src="images/opel3.jpg" alt="Auto 4"></div>
+                <div class="g-item"><img src="images/bmwm5.jpg" alt="Auto 5"></div>
+                <div class="g-item"><img src="images/opel2.jpg" alt="Auto 6"></div>
+                <div class="g-item"><img src="images/audia6.jpg" alt="Auto 5"></div>
+                <div class="g-item"><img src="images/mercedese.jpg" alt="Auto 6"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- ======================================================
+         KONTAKT  #/kontakt
+    ======================================================= -->
+    <div class="view" data-route="/kontakt">
+      <section class="contact section-pad contact-form-page">
+        <div class="container-xxl site-container">
+          <div class="contact-hero">
+            <h2 class="contact-title">MIAMI WASH- KONTAKTUJTE NÁS</h2>
+            <div class="contact-tagline">Vaše auto si zaslúži viac</div>
+          </div>
+          <div class="contact-divider"></div>
+
+          <div class="row g-4 align-items-start contact-grid">
+            <div class="col-12 col-lg-5">
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-field">
+                  <label for="cfName">MENO</label>
+                  <input id="cfName" name="name" type="text" placeholder="NAPÍŠTE SVOJE MENO" autocomplete="given-name" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="cfSurname">PRIEZVISKO</label>
+                  <input id="cfSurname" name="surname" type="text" placeholder="NAPÍŠTE SVOJE PRIEZVISKO" autocomplete="family-name" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="cfEmail">EMAIL</label>
+                  <input id="cfEmail" name="email" type="email" placeholder="NAPÍŠTE SVOJU EMAILOVU ADRESU" autocomplete="email" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="cfMessage">SPRAVA</label>
+                  <textarea id="cfMessage" name="message" rows="4" placeholder="NAPÍŠTE SPRAVU" required></textarea>
+                </div>
+
+                <div class="form-field form-field--spacer"></div>
+
+                <div class="contact-alert" id="contactAlert" role="status" aria-live="polite" hidden></div>
+
+                <button type="submit" class="btn btn-danger contact-submit">Kontaktujte nás pre prenájom</button>
+              </form>
+            </div>
+
+            <div class="col-12 col-lg-7">
+              <div class="contact-photo">
+                <img src="images/hero.jpg" alt="Auto v umyvárni" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- LIGHTBOX (na klik fotky + šípky) -->
+  <div class="lb" id="lightbox" aria-hidden="true">
+    <div class="lb-bg" data-lb-close></div>
+
+    <button class="lb-close" type="button" aria-label="Zavrieť" data-lb-close>×</button>
+    <button class="lb-prev" type="button" aria-label="Predchádzajúca" data-lb-prev>‹</button>
+    <button class="lb-next" type="button" aria-label="Nasledujúca" data-lb-next>›</button>
+
+    <div class="lb-body" role="dialog" aria-modal="true" aria-label="Náhľad fotky">
+      <img id="lbImg" src="" alt="Náhľad" />
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container-xxl site-container">
+      <div class="footer-inner">
+        <div class="foot-brand">
+          <span class="miami">Miami</span><span class="wash">Wash</span>
+        </div>
+
+        <div class="foot-cols">
+          <div class="foot-col foot-menu">
+            <a href="#/" data-route-link>O NAS</a>
+            <a href="#/sluzby" data-route-link>SLUZBY</a>
+            <a href="#/cennik" data-route-link>CENNÍK</a>
+            <a href="#/prenajom" data-route-link>PRENAJOM AUTA</a>
+            <a href="#/galeria" data-route-link>GALERIA</a>
+            <a href="#/kontakt" data-route-link>KONTAKT</a>
+          </div>
+
+          <div class="foot-col">
+            <h4>OTVORENE HODINY:</h4>
+            <div>9:00 - 18:00</div>
+          </div>
+
+          <div class="foot-col">
+            <h4>KONTAKTUJTE NAS:</h4>
+            <div>info@miamiwash.sk</div>
+            <div>+421 907 738 488</div>
+          </div>
+
+          <div class="foot-col">
+            <h4>SOCIALNE SIETE:</h4>
+            <div class="foot-social">
+              <a class="soc" href="https://www.instagram.com/miamiwash.sk?igsh=MWFod2dmcWpiaHVocA==" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a class="soc" href="https://www.facebook.com/share/1AhNEcQjn1/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-line"></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
